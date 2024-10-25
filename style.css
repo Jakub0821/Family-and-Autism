@@ -16,10 +16,14 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
+    min-height: 100vh; /* Minimalna wysokość, aby zajmować całe okno przeglądarki */
+}
+
+.page-container {
+    flex-grow: 1; /* Główna zawartość ma rosnąć, aby wypełnić przestrzeń */
 }
 
 .container {
-    flex: 1;
     width: 80%;
     margin: 0 auto;
 }
@@ -73,71 +77,12 @@ nav ul li a {
     line-height: 1.8;
 }
 
-/* Sekcja Porady */
-.tips-section {
-    background-color: #f9f9f9;
-    padding: 40px 0;
-}
-
-.tips-section h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.tips-section ul {
-    list-style: disc;
-    margin-left: 40px;
-    line-height: 1.8;
-}
-
-/* Sekcja Kontakt */
-.contact-section {
-    background-color: #e9ecef;
-    padding: 40px 0;
-    text-align: center;
-}
-
-.contact-section form {
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-}
-
-.contact-section label {
-    margin: 10px 0 5px;
-}
-
-.contact-section input,
-.contact-section textarea {
-    padding: 10px;
-    margin-bottom: 20px;
-    width: 100%;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.contact-section input[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-    padding: 15px;
-    font-size: 1.1em;
-}
-
-.contact-section input[type="submit"]:hover {
-    background-color: #45a049;
-}
-
 /* Stopka */
 footer {
     background-color: #333;
     color: white;
     padding: 10px 0;
     text-align: center;
-    position: relative;
-    bottom: 0;
     width: 100%;
-    margin-top: auto;
+    margin-top: auto; /* Wymusza umiejscowienie stopki na dole */
 }
