@@ -16,11 +16,10 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
-    min-height: 100vh; /* Minimalna wysokość, aby zajmować całe okno przeglądarki */
 }
 
 .page-container {
-    flex-grow: 1; /* Główna zawartość ma rosnąć, aby wypełnić przestrzeń */
+    flex-grow: 1;
 }
 
 .container {
@@ -52,29 +51,17 @@ nav ul li a {
     font-weight: bold;
 }
 
-/* Sekcja powitalna */
-.welcome-section {
-    background-color: #fff;
+/* Sekcje */
+.welcome-section, .mission-section, .offer-section {
     padding: 20px 0;
-    text-align: center;
 }
 
-/* Sekcja O nas */
-.about-section {
-    background-color: #e9ecef;
-    padding: 40px 0;
-    text-align: center;
+.help-section, .articles-section {
+    padding: 20px 0;
 }
 
-.about-section h2 {
-    margin-bottom: 20px;
-}
-
-.about-section p {
-    width: 80%;
-    margin: 0 auto;
-    font-size: 1.1em;
-    line-height: 1.8;
+#help-form-container, #article-form-container {
+    padding-top: 15px;
 }
 
 /* Stopka */
@@ -84,5 +71,5 @@ footer {
     padding: 10px 0;
     text-align: center;
     width: 100%;
-    margin-top: auto; /* Wymusza umiejscowienie stopki na dole */
+    margin-top: auto;
 }
