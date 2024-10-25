@@ -13,13 +13,14 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
+    min-height: 100vh; /* Minimalna wysokość strony równa wysokości okna przeglądarki */
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
 }
 
 .page-container {
-    flex-grow: 1;
+    flex-grow: 1; /* Rozciąga zawartość na całą wysokość dostępnej przestrzeni */
 }
 
 .container {
@@ -71,5 +72,5 @@ footer {
     padding: 10px 0;
     text-align: center;
     width: 100%;
-    margin-top: auto;
+    margin-top: auto; /* Zapewnia, że stopka zawsze znajduje się na dole strony */
 }
