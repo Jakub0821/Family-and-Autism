@@ -8,82 +8,84 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Rodzina i Autyzm</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Strona główna</a></li>
-                    <li><a href="onas.html">O nas</a></li>
-                    <li><a href="porady.html">Porady</a></li>
-                    <li><a href="kontakt.html">Kontakt</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <div class="page-container">
+        <header>
+            <div class="container">
+                <h1>Rodzina i Autyzm</h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Strona główna</a></li>
+                        <li><a href="onas.html">O nas</a></li>
+                        <li><a href="porady.html">Porady</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-    <section id="home" class="welcome-section">
-        <div class="container">
-            <h2>Witamy na stronie Rodzina i Autyzm</h2>
-            <p>Strona wsparcia dla rodzin z dziećmi autystycznymi. Znajdziesz tu porady, artykuły i społeczność gotową do pomocy. Jesteśmy tu, aby pomóc Ci przejść przez każdą trudność, wspierać w codziennych wyzwaniach i dzielić się doświadczeniami z innymi rodzicami.</p>
-        </div>
-    </section>
+        <main>
+            <section id="home" class="welcome-section">
+                <div class="container">
+                    <h2>Witamy na stronie Rodzina i Autyzm</h2>
+                    <p>Strona wsparcia dla rodzin z dziećmi autystycznymi. Znajdziesz tu porady, artykuły i społeczność gotową do pomocy. Jesteśmy tu, aby pomóc Ci przejść przez każdą trudność, wspierać w codziennych wyzwaniach i dzielić się doświadczeniami z innymi rodzicami.</p>
+                </div>
+            </section>
 
-    <section id="mission" class="mission-section">
-        <div class="container">
-            <h2>Nasza Misja</h2>
-            <p>„Rodzina i Autyzm” powstała, aby wspierać rodziny z dziećmi w spektrum autyzmu. Naszym celem jest budowanie świadomości i dostarczanie narzędzi, które pomogą rodzicom lepiej rozumieć potrzeby ich dzieci. Tworzymy społeczność, w której rodziny mogą się wspierać, dzielić doświadczeniami i znajdować pomocne informacje.</p>
-        </div>
-    </section>
+            <section id="how-we-help" class="help-section">
+                <div class="container">
+                    <h2>Jak możemy Ci pomóc?</h2>
+                    <button id="show-help-form">Zadaj pytanie</button>
 
-    <section id="what-we-offer" class="offer-section">
-        <div class="container">
-            <h2>Co oferujemy?</h2>
-            <ul>
-                <li><strong>Porady ekspertów:</strong> Sprawdzone artykuły i wskazówki, jak wspierać dziecko z autyzmem.</li>
-                <li><strong>Grupy wsparcia:</strong> Możliwość dołączenia do społeczności rodziców, którzy dzielą się swoimi doświadczeniami.</li>
-                <li><strong>Zasoby edukacyjne:</strong> Dostęp do materiałów edukacyjnych, książek, filmów oraz narzędzi wspierających.</li>
-            </ul>
-        </div>
-    </section>
+                    <div id="help-form-container" style="display:none;">
+                        <p>Oferujemy wsparcie w codziennych wyzwaniach rodzicielskich. Wpisz swój problem poniżej, a podpowiemy Ci, jak sobie z nim poradzić!</p>
+                        <form id="problem-form">
+                            <label for="problem">Opisz swój problem:</label>
+                            <textarea id="problem" rows="4" cols="50" placeholder="Opisz swój problem..."></textarea>
+                            <button type="submit">Zobacz rozwiązanie</button>
+                        </form>
+                        <div id="solution" style="margin-top: 20px;"></div>
+                    </div>
+                </div>
+            </section>
 
-    <section id="how-we-help" class="help-section">
-        <div class="container">
-            <h2>Jak możemy Ci pomóc?</h2>
-            <p>Oferujemy wsparcie w codziennych wyzwaniach rodzicielskich. Wpisz swój problem poniżej, a podpowiemy Ci, jak sobie z nim poradzić!</p>
-            
-            <form id="problem-form">
-                <label for="problem">Opisz swój problem:</label>
-                <textarea id="problem" rows="4" cols="50" placeholder="Opisz swój problem..."></textarea>
-                <button type="submit">Zobacz rozwiązanie</button>
-            </form>
+            <section id="latest-articles" class="articles-section">
+                <div class="container">
+                    <h2>Najnowsze artykuły i książki</h2>
+                    <button id="show-article-search">Znajdź artykuły i książki</button>
 
-            <div id="solution" style="margin-top: 20px;"></div>
-        </div>
-    </section>
+                    <div id="article-form-container" style="display:none;">
+                        <p>Wpisz temat, który Cię interesuje, a pokażemy powiązane artykuły i książki!</p>
+                        <form id="search-form">
+                            <label for="search">Wpisz temat:</label>
+                            <input type="text" id="search" placeholder="Wpisz np. dziecko autystyczne">
+                            <button type="submit">Szukaj</button>
+                        </form>
+                        <div id="results" style="margin-top: 20px;"></div>
+                    </div>
+                </div>
+            </section>
+        </main>
 
-    <section id="latest-articles" class="articles-section">
-        <div class="container">
-            <h2>Najnowsze artykuły i książki</h2>
-            <p>Wpisz temat, który Cię interesuje, a pokażemy powiązane artykuły i książki!</p>
-            
-            <form id="search-form">
-                <label for="search">Wpisz temat:</label>
-                <input type="text" id="search" placeholder="Wpisz np. dziecko autystyczne">
-                <button type="submit">Szukaj</button>
-            </form>
-
-            <div id="results" style="margin-top: 20px;"></div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Rodzina i Autyzm. Wszelkie prawa zastrzeżone.</p>
-        </div>
-    </footer>
+        <footer>
+            <div class="container">
+                <p>&copy; 2024 Rodzina i Autyzm. Wszelkie prawa zastrzeżone.</p>
+            </div>
+        </footer>
+    </div>
 
     <script src="js/help.js"></script>
     <script src="js/search.js"></script>
+    <script>
+        // Skrypt do pokazywania i ukrywania formularzy
+        document.getElementById('show-help-form').addEventListener('click', function() {
+            const helpFormContainer = document.getElementById('help-form-container');
+            helpFormContainer.style.display = helpFormContainer.style.display === 'none' ? 'block' : 'none';
+        });
+
+        document.getElementById('show-article-search').addEventListener('click', function() {
+            const articleFormContainer = document.getElementById('article-form-container');
+            articleFormContainer.style.display = articleFormContainer.style.display === 'none' ? 'block' : 'none';
+        });
+    </script>
 </body>
 </html>
