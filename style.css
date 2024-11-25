@@ -6,14 +6,13 @@
 
 html, body {
     height: 100%;
+    display: flex;
+    flex-direction: column;
     margin: 0;
     padding: 0;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
     min-height: 100vh;
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -21,7 +20,10 @@ body {
 }
 
 .page-container {
-    flex-grow: 1; /* Rozciąga zawartość na całą wysokość dostępnej przestrzeni */
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .container {
@@ -54,16 +56,8 @@ nav ul li a {
 }
 
 /* Sekcje */
-.welcome-section, .mission-section, .offer-section {
+.welcome-section, .mission-section, .offer-section, .help-section, .articles-section {
     padding: 20px 0;
-}
-
-.help-section, .articles-section {
-    padding: 20px 0;
-}
-
-#help-form-container, #article-form-container {
-    padding-top: 15px;
 }
 
 /* Stopka */
@@ -73,5 +67,5 @@ footer {
     padding: 10px 0;
     text-align: center;
     width: 100%;
-    margin-top: auto; /* Zapewnia, że stopka zawsze znajduje się na dole strony */
+    margin-top: auto;
 }
