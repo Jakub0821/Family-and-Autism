@@ -46,9 +46,12 @@ header ul li a {
     line-height: 1.8;
 }
 
+/* Stopka */
 footer {
     background-color: #333;
     color: white;
     padding: 10px 0;
     text-align: center;
+    width: 100%;
+    margin-top: auto;
 }
