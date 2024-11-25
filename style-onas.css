@@ -1,14 +1,15 @@
+/* Ogólne ustawienia */
 body {
     font-family: Arial, sans-serif;
     background-color: #e9ecef;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
+main {
+    flex: 1;
 }
 
 .container {
@@ -16,6 +17,37 @@ header {
     margin: 0 auto;
 }
 
+/* Nagłówek */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header ul li {
+    margin: 0 15px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Sekcje */
 .about-section, .mission-section, .values-section {
     padding: 40px;
     background-color: #fff;
@@ -45,5 +77,4 @@ footer {
     padding: 10px 0;
     text-align: center;
     width: 100%;
-    margin-top: auto;
 }
