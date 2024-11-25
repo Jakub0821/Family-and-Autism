@@ -13,7 +13,8 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Minimalna wysokość strony równa wysokości okna przeglądarki */
+    margin: 0;
+    min-height: 100vh;
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
