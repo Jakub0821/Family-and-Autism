@@ -1,6 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #e9ecef;
+    margin: 0;
 }
 
 header {
@@ -10,10 +11,29 @@ header {
     text-align: center;
 }
 
-.about-section {
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.about-section, .mission-section, .values-section {
     padding: 40px;
     background-color: #fff;
     text-align: center;
+    margin-bottom: 20px;
 }
 
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
 
+.values-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.values-section ul li {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
