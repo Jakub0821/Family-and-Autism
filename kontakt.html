@@ -7,42 +7,78 @@
     <link rel="stylesheet" href="style-kontakt.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Rodzina i Autyzm</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Strona główna</a></li>
-                    <li><a href="onas.html">O nas</a></li>
-                    <li><a href="porady.html">Porady</a></li>
-                    <li><a href="kontakt.html">Kontakt</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <div class="page-container">
+        <header>
+            <div class="container">
+                <h1>Rodzina i Autyzm</h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Strona główna</a></li>
+                        <li><a href="onas.html">O nas</a></li>
+                        <li><a href="porady.html">Porady</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <h2>Kontakt</h2>
-            <form id="contactForm" action="#" method="post">
-                <label for="name">Imię:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message">Wiadomość:</label>
-                <textarea id="message" name="message" required></textarea>
-                
-                <input type="submit" value="Wyślij">
-            </form>
-        </div>
-    </section>
+        <main>
+            <section id="contact-info" class="contact-info-section">
+                <div class="container">
+                    <h2>Dane kontaktowe</h2>
+                    <p><strong>Telefon:</strong> +48 123 456 789</p>
+                    <p><strong>Email:</strong> kontakt@rodzinaiautyzm.pl</p>
+                    <p><strong>Adres:</strong> ul. Przykładowa 1, 00-123 Warszawa</p>
+                </div>
+            </section>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Rodzina i Autyzm. Wszelkie prawa zastrzeżone.</p>
-        </div>
-    </footer>
+            <section id="contact-form" class="contact-form-section">
+                <div class="container">
+                    <h2>Skontaktuj się z nami</h2>
+                    <form id="contactForm" action="#" method="post">
+                        <label for="name">Imię:</label>
+                        <input type="text" id="name" name="name" required>
+                        
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        
+                        <label for="message">Wiadomość:</label>
+                        <textarea id="message" name="message" required></textarea>
+                        
+                        <input type="submit" value="Wyślij">
+                    </form>
+                    <p id="form-message" style="display:none;">Dziękujemy za wiadomość! Odpowiemy najszybciej, jak to możliwe.</p>
+                </div>
+            </section>
+
+            <section id="map" class="map-section">
+                <div class="container">
+                    <h2>Nasza lokalizacja</h2>
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243646.9828904287!2d21.02798363769184!3d52.23704948111168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc6690d19a3b%3A0x6f2d22b7b2a20d7c!2sWarszawa!5e0!3m2!1spl!2spl!4v1635507604278!5m2!1spl!2spl" 
+                        width="100%" 
+                        height="400" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container">
+                <p>&copy; 2024 Rodzina i Autyzm. Wszelkie prawa zastrzeżone.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Walidacja formularza i wiadomość potwierdzająca
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault(); // Blokuje domyślne zachowanie formularza
+            document.getElementById('form-message').style.display = 'block';
+        });
+    </script>
 </body>
 </html>
